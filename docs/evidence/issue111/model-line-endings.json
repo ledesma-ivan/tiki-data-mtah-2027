@@ -1,0 +1,8 @@
+{
+  "canonical_git_blob_sha256": "1e0579ad8232de7579ac3df6a4d49768fa6702e374e20c57ee9cec2bcb2a8ddf",
+  "canonical_bytes": 593518,
+  "lf_sha256": "1e0579ad8232de7579ac3df6a4d49768fa6702e374e20c57ee9cec2bcb2a8ddf",
+  "crlf_checkout_sha256": "b383df17de7032fabd49fbd56056afab1a23c9ff6bcb509035a14bf9eee52153",
+  "crlf_bytes": 593519,
+  "fresh_export_sha256": "1e0579ad8232de7579ac3df6a4d49768fa6702e374e20c57ee9cec2bcb2a8ddf"
+}

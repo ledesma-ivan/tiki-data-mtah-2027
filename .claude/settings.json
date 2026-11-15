@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(//c/mtah-data/**)",
+      "Read(../mtah2027/data/**)",
+      "Read(../mtah2027/evaluation/results/**)",
+      "Read(../mtah2027/evaluation/reports/**)",
+      "Read(./output/**)",
+      "Read(**/BAR-ATH_tactical*)",
+      "Read(**/BAR-ATH_broadcast*)",
+      "Read(**/*.npz)",
+      "Read(**/*.mp4)"
+    ]
+  }
+}

@@ -1,0 +1,297 @@
+{
+  "command": "audit_77_reproduction.py --fingerprints",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\emanu\\prj\\more-than-a-hack-2026\\.venv\\Scripts\\python.exe",
+    "platform": "win32",
+    "packages": {
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "threadpoolctl": "3.7.0"
+    },
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "official_code": "C:\\Users\\emanu\\prj\\mtah2027",
+    "historical_environment": "SIN CONFIRMAR",
+    "historical_data_revision": "SIN CONFIRMAR"
+  },
+  "code": {
+    "diagnostic": "056d1bd9d19c14f2a8fc5b565a3c50957405d948",
+    "historical": "67b8fe63b02a105ff2946f28efcb0a9d8c6882b2"
+  },
+  "inputs_manifest_sha256": "36c908a162e4ae74d92aa342b25bc04b482e328ce49497e759e7143b5546b7c7",
+  "previous_report_sha256": "d41c5a41f790f180c99f8bd6ef3bcd12a0209734af0f7dc82c54361c1d54f0de",
+  "previous_code": {
+    "commit": "5817e5f340c4c86535f4c1c377996ad038ecb7cd",
+    "modified": [
+      "docs/DIAGNOSTICO-POSESION.md",
+      "explore/diagnose_changes.py",
+      "tests/test_diagnose_changes.py"
+    ]
+  },
+  "fingerprints": [
+    {
+      "evaluation": [
+        [
+          "metrica",
+          2
+        ]
+      ],
+      "model": "reference",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "metrica",
+          2
+        ]
+      ],
+      "model": "candidate",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "metrica",
+          3
+        ]
+      ],
+      "model": "reference",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "metrica",
+          3
+        ]
+      ],
+      "model": "candidate",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          1
+        ]
+      ],
+      "model": "reference",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          1
+        ]
+      ],
+      "model": "candidate",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          2
+        ]
+      ],
+      "model": "reference",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          2
+        ]
+      ],
+      "model": "candidate",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          3
+        ]
+      ],
+      "model": "reference",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          3
+        ]
+      ],
+      "model": "candidate",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          4
+        ]
+      ],
+      "model": "reference",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          4
+        ]
+      ],
+      "model": "candidate",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          5
+        ]
+      ],
+      "model": "reference",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    },
+    {
+      "evaluation": [
+        [
+          "idsse",
+          5
+        ]
+      ],
+      "model": "candidate",
+      "fields_equal": {
+        "features": true,
+        "rows": true,
+        "order": true,
+        "scorer": true,
+        "versions": true
+      }
+    }
+  ],
+  "matching_row_correspondences": 84,
+  "code_body_equal_after_explicit_weight_parameterization": {
+    "fit": true,
+    "game_rows": true,
+    "score": true,
+    "per_game": true,
+    "bench_means": true,
+    "degraded": true
+  },
+  "complete_primary_A_gate": [
+    {
+      "bench": "Metrica",
+      "anchor": "start",
+      "expected": 0.0026,
+      "observed": -0.000726770188243242,
+      "absolute_error": 0.003326770188243242,
+      "tolerance": 0.0001,
+      "passes": false
+    },
+    {
+      "bench": "IDSSE",
+      "anchor": "status",
+      "expected": 0.0157,
+      "observed": 0.01996000210585714,
+      "absolute_error": 0.004260002105857141,
+      "tolerance": 0.0001,
+      "passes": false
+    }
+  ],
+  "B_loaded": false,
+  "reserve_loaded": false,
+  "new_models_fitted": 0,
+  "previous_results_reused": true,
+  "seconds": 68.52076268196106
+}

@@ -1,0 +1,5 @@
+# Synthetic tests only; include the pinned training stack and its transitive dependencies.
+-r requirements-train.txt
+python-dateutil==3.0.0
+six==1.17.0
+tzdata==2026.6

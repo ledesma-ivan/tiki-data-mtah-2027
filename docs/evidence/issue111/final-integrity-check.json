@@ -1,0 +1,23 @@
+{
+  "document_errors": [],
+  "original_local_changes_preserved": {
+    "docs/REGLAS.md": true,
+    "docs/AUDITORIA-ACLARACION-20261103.md": true
+  },
+  "historical_code_and_recipe_unchanged": {
+    "explore/short_weight.py": true,
+    "calibrate_live.py": true,
+    "calibrate_edges.py": true,
+    "bench.py": true,
+    "calibrate_dead.py": true,
+    "open_tracking.py": true,
+    "idsse_dead_labels.py": true,
+    "explore/idsse_bench.py": true,
+    "explore/player_noise.py": true,
+    "possession.py": true,
+    "live_choice.json": true,
+    "requirements.txt": true,
+    "requirements-train.txt": true
+  },
+  "append_only": true
+}

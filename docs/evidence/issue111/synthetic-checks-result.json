@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\emanu\\prj\\more-than-a-hack-2026\\.venv\\Scripts\\python.exe",
+    "-m",
+    "unittest",
+    "-v",
+    "tests.test_diagnose_changes",
+    "tests.test_bench_variant_b"
+  ],
+  "exit_code": 0,
+  "log_sha256": "3e039aaf8b011048fe5bb9e5b25e971a3e26b1cad07b900a9505e7a6681c2a4c",
+  "synthetic_only": true
+}

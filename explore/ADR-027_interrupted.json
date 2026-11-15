@@ -1,0 +1,15 @@
+{
+  "protocol": "ADR-027",
+  "status": "interrupted",
+  "interrupted_utc": "2026-11-02T18:22:30.260323+00:00",
+  "wall_s_known_lower_bound": 620.5,
+  "completed_folds": [
+    [
+      "metrica",
+      2
+    ]
+  ],
+  "scores_computed": false,
+  "reason": "Interrupted after first fold: interpreted exported-tree evaluation was too slow. No selection scores or diagnostics were computed. Replace only evaluator with exact compiled traversal of the same exported integer leaves/thresholds; verify against possession.tree_scores.",
+  "family_and_rule_changed": false
+}

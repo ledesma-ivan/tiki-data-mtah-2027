@@ -1,0 +1,49 @@
+{
+  "source": "https://github.com/nodalsports/more-than-a-hack-2027/issues/111#issuecomment-6727829010",
+  "confirmation_logs": {
+    "1": {
+      "conditions": 43,
+      "passed": 43,
+      "seed_ranges": {
+        "Metrica": [
+          50,
+          59
+        ],
+        "IDSSE": [
+          50,
+          54
+        ]
+      },
+      "against": "radio",
+      "reported_seconds": "2492",
+      "exported_path_different_frames": 0
+    },
+    "3": {
+      "conditions": 43,
+      "passed": 43,
+      "seed_ranges": {
+        "Metrica": [
+          50,
+          59
+        ],
+        "IDSSE": [
+          50,
+          54
+        ]
+      },
+      "against": "radio",
+      "reported_seconds": "2492",
+      "exported_path_different_frames": 0
+    }
+  },
+  "conditions_by_code": {
+    "scenarios": 21,
+    "clipped_ball": 2,
+    "noise": 20
+  },
+  "historical_environment": "SIN CONFIRMAR",
+  "historical_data_revision": "SIN CONFIRMAR",
+  "new_full_43_condition_confirmations": 0,
+  "new_partial_default_replays": 2,
+  "partial_report": "confirmation-default-current.json"
+}

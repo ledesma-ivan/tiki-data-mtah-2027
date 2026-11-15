@@ -1,0 +1,372 @@
+{
+  "historical_source": "https://github.com/nodalsports/more-than-a-hack-2027/issues/111#issuecomment-6727829010",
+  "historical_environment": "SIN CONFIRMAR",
+  "historical_data_revision": "SIN CONFIRMAR",
+  "selection": {
+    "historical": {
+      "1": {
+        "Metrica": 0.1224,
+        "IDSSE": 0.1646,
+        "mean": 0.1435
+      },
+      "3": {
+        "Metrica": 0.125,
+        "IDSSE": 0.1803,
+        "mean": 0.1526
+      },
+      "5": {
+        "Metrica": 0.097,
+        "IDSSE": 0.18,
+        "mean": 0.1385
+      }
+    },
+    "current": {
+      "1": {
+        "Metrica": 0.126,
+        "IDSSE": 0.163,
+        "mean": 0.1445
+      },
+      "3": {
+        "Metrica": 0.1253,
+        "IDSSE": 0.183,
+        "mean": 0.1541
+      },
+      "5": {
+        "Metrica": 0.1046,
+        "IDSSE": 0.1818,
+        "mean": 0.1432
+      }
+    },
+    "current_minus_historical": {
+      "1": {
+        "Metrica": 0.0036,
+        "IDSSE": -0.0016,
+        "mean": 0.001
+      },
+      "3": {
+        "Metrica": 0.0003,
+        "IDSSE": 0.0027,
+        "mean": 0.0015
+      },
+      "5": {
+        "Metrica": 0.0076,
+        "IDSSE": 0.0018,
+        "mean": 0.0047
+      }
+    }
+  },
+  "confirmation": {
+    "scope": "default only, 3 conditions per fixed weight; not a full 43-condition confirmation",
+    "results": [
+      {
+        "weight": 1,
+        "bench": "Metrica",
+        "anchor": "end",
+        "point": 0.11292653649635742,
+        "lo": 0.09079668026962684,
+        "hi": 0.13602834629265217,
+        "positive_units": 1,
+        "units": 1,
+        "historical_point": 0.1162,
+        "historical_lo": 0.0925,
+        "historical_hi": 0.1416,
+        "current_minus_historical_point": -0.0032734635036425763
+      },
+      {
+        "weight": 1,
+        "bench": "Metrica",
+        "anchor": "start",
+        "point": 0.11490033144073264,
+        "lo": 0.09127191889031515,
+        "hi": 0.13653519362203,
+        "positive_units": 1,
+        "units": 1,
+        "historical_point": 0.1176,
+        "historical_lo": 0.0937,
+        "historical_hi": 0.142,
+        "current_minus_historical_point": -0.002699668559267357
+      },
+      {
+        "weight": 1,
+        "bench": "IDSSE",
+        "anchor": "status",
+        "point": 0.14472293968426023,
+        "lo": 0.1221005962212797,
+        "hi": 0.16671058441742875,
+        "positive_units": 4,
+        "units": 4,
+        "historical_point": 0.144,
+        "historical_lo": 0.1204,
+        "historical_hi": 0.1657,
+        "current_minus_historical_point": 0.0007229396842602376
+      },
+      {
+        "weight": 3,
+        "bench": "Metrica",
+        "anchor": "end",
+        "point": 0.13449417940148067,
+        "lo": 0.10715355406580171,
+        "hi": 0.16224546104791335,
+        "positive_units": 1,
+        "units": 1,
+        "historical_point": 0.1346,
+        "historical_lo": 0.105,
+        "historical_hi": 0.1631,
+        "current_minus_historical_point": -0.0001058205985193239
+      },
+      {
+        "weight": 3,
+        "bench": "Metrica",
+        "anchor": "start",
+        "point": 0.13722086966047162,
+        "lo": 0.10960001247102322,
+        "hi": 0.16511266188866455,
+        "positive_units": 1,
+        "units": 1,
+        "historical_point": 0.1368,
+        "historical_lo": 0.1075,
+        "historical_hi": 0.1647,
+        "current_minus_historical_point": 0.00042086966047161223
+      },
+      {
+        "weight": 3,
+        "bench": "IDSSE",
+        "anchor": "status",
+        "point": 0.1510784458955826,
+        "lo": 0.1262653776028164,
+        "hi": 0.17526064646591125,
+        "positive_units": 4,
+        "units": 4,
+        "historical_point": 0.1538,
+        "historical_lo": 0.1287,
+        "historical_hi": 0.1784,
+        "current_minus_historical_point": -0.0027215541044173786
+      }
+    ],
+    "historical_full_conditions": {
+      "1": "43/43 against radio",
+      "3": "43/43 against radio"
+    },
+    "current_default_conditions": {
+      "1": "3/3 positive intervals against radio",
+      "3": "3/3 positive intervals against radio"
+    }
+  },
+  "export": {
+    "matches_historical_model": true,
+    "sha256": "1e0579ad8232de7579ac3df6a4d49768fa6702e374e20c57ee9cec2bcb2a8ddf",
+    "seconds": 141.88769555091858,
+    "choice_unchanged": true
+  },
+  "source_manifests": {
+    "source.json": "ce40d75e2ab633893cdf93099ca049337168c1319c55119ba456ee77eb57c4aa",
+    "current-inputs.json": "36c908a162e4ae74d92aa342b25bc04b482e328ce49497e759e7143b5546b7c7",
+    "current-revisions.json": "06a81cc91258ef0fa203ca6a4f6cddd46150c4dd4f4592d3aaadd4d436524669",
+    "selection-input-verification.json": "aef174e6cc5c6ca036cef15faad412fb32dc25c128146e5f568cd2fa425c8e63",
+    "selection-current-result.json": "87d0ef8286de35b51d2ec143c6c3e75e3c96f913676e988b1dc926ce5fb12b3e",
+    "confirmation-default-current.json": "01377d9b52d1ba0c74b560be6765a104fdd525469ec6af63e8a08a41bb31e13f",
+    "final-current-result.json": "dd5674e407a91664af7610c84ec5d81dd9a5338d4c39cde741d153f66d941248",
+    "static-audit.json": "39c5af03965dca05b432874f18d5387b4b1820183483007a1d1d4ce38f304c99",
+    "synthetic-checks-result.json": "1088c910e0bdbb772e01c5eaca51254b18bce1435fc356c7bb4b78aa72c019ca"
+  },
+  "input_files_rechecked": [
+    {
+      "file": "Sample_Game_1_RawEventsData.csv",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_1_RawTrackingData_Home_Team.csv",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_1_RawTrackingData_Away_Team.csv",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_2_RawEventsData.csv",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_2_RawTrackingData_Home_Team.csv",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_2_RawTrackingData_Away_Team.csv",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_2_tracking.npz",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_3_events.json",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_3_metadata.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_3_tracking.txt",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "Sample_Game_3_tracking.npz",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_03_02_events_raw_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_03_02_events_raw_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml.npz",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml.restarts.json",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml.npz",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml.restarts.json",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml.npz",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml.restarts.json",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml.npz",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml.restarts.json",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml.npz",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml.restarts.json",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+      "matches_initial_hash": true
+    },
+    {
+      "file": "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+      "matches_initial_hash": true
+    }
+  ],
+  "new_derived_external_caches": [
+    {
+      "file": "idsse-data\\DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml.npz",
+      "bytes": 23718629,
+      "sha256": "ad9592860a077c7ebef024b688a65b33eb29986eae10306f55713485e4592826"
+    },
+    {
+      "file": "idsse-data\\DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml.npz",
+      "bytes": 24366067,
+      "sha256": "3eee8d6d79bf8a364733a9e2360feb129c52d62cdbe37389c6183a7df95758ab"
+    },
+    {
+      "file": "idsse-data\\DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml.restarts.json",
+      "bytes": 1180,
+      "sha256": "b1f7191d815861675ad00f0cae4e3ea44d686a73aad30f7f37a66472c643638c"
+    },
+    {
+      "file": "idsse-data\\DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml.restarts.json",
+      "bytes": 1098,
+      "sha256": "e0d48c7b1c00db9da4ff7401fbd531241da951ed7f06cbcc12a04bf779b4121b"
+    },
+    {
+      "file": "historical\\data\\Sample_Game_1\\Sample_Game_1_tracking.npz",
+      "bytes": 50968283,
+      "sha256": "81052155031f689fb72e73b22ccb4165bf142c286a58a08b1dce091792a6dc5d"
+    }
+  ],
+  "A_reproduced": false,
+  "B_evaluated_on_real_data": false,
+  "cause_of_selection_discrepancy": "NO COMPROBADO"
+}

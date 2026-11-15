@@ -1,0 +1,29 @@
+{
+  "baseline": "de97105",
+  "default_rows_identical": true,
+  "default_model_bytes_identical": true,
+  "default_predictions_identical": true,
+  "inference_and_delivered_files_unchanged": true,
+  "synthetic_model_sha256": "ab0a7971cd2135490eceddab1a95aa2ecc974f83bef3d3f499c365c5c75b7763",
+  "synthetic_suite": {
+    "command": "MTAH_OFFICIAL=/home/matias/open-data/mtah2027 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 /home/matias/open-data/venv/bin/python ci_checks.py tests",
+    "modules": 19,
+    "result": "passed",
+    "wall_s": 72.87810809805524,
+    "final_working_tree": true
+  },
+  "targeted_module": {
+    "command": "MTAH_OFFICIAL=/home/matias/open-data/mtah2027 OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=1 /home/matias/open-data/venv/bin/python -m tests.test_controlled_truth",
+    "tests": 10,
+    "result": "passed after final API and exact compiled evaluator"
+  },
+  "compiled_exported_scores_exact_at_thresholds": true,
+  "B_training_export_repeats_exactly": true,
+  "B_training_antisymmetry": true,
+  "unknown_ball_and_period_boundaries": true,
+  "held_out_match_excluded": true,
+  "guard_repo": "OK",
+  "git_diff_check": "passed",
+  "compiled_evaluator_selection_verified_rows": 2530316,
+  "compiled_evaluator_selection_raw_scores_differ": 0
+}

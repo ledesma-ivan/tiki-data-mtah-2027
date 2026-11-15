@@ -1,0 +1,10 @@
+# Training only (calibrate_edges.py, ADR-010; calibrate_live.py, ADR-014): possession.py writes the CSV with
+# requirements.txt alone. Pinned so the exported models (stops_model.json, live_model.json) come out the same;
+# scikit-learn 1.9.1 keeps numpy 2.5.1.
+-r requirements.txt
+scikit-learn==1.9.1
+narwhals==2.24.0
+scipy==1.18.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+cloudpickle==3.1.2

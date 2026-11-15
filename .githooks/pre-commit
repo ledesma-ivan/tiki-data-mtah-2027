@@ -1,0 +1,8 @@
+#!/bin/sh
+# Blocks match data and the Drive link from commits (AGENTS.md). Enable: git config core.hooksPath .githooks
+# First Python 3 on PATH: Windows usually has only python, macOS only python3 (or a python 2 as python).
+for py in python python3; do
+  "$py" -c 'import sys; sys.exit(sys.version_info[0] != 3)' >/dev/null 2>&1 && exec "$py" guard.py staged
+done
+echo "pre-commit: no Python 3 on PATH (python or python3), guard.py did not run" >&2
+exit 1

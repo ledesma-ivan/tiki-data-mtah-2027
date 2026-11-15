@@ -1,0 +1,656 @@
+{
+ "protocol": "ADR-019",
+ "status": "confirmed",
+ "candidate": {
+  "leaves": 63,
+  "lam": 10.0,
+  "short_weight": 1.0,
+  "short_s": 5.0
+ },
+ "reference": "radio",
+ "partitions": {
+  "selection": [
+   "metrica 2",
+   "metrica 3",
+   "idsse 1",
+   "idsse 2",
+   "idsse 3",
+   "idsse 4",
+   "idsse 5"
+  ],
+  "reserve": [
+   "metrica 1",
+   "idsse 6",
+   "idsse 7"
+  ]
+ },
+ "seeds": {
+  "metrica": [
+   110,
+   111,
+   112,
+   113,
+   114,
+   115,
+   116,
+   117,
+   118,
+   119
+  ],
+  "idsse": [
+   110,
+   111,
+   112,
+   113,
+   114
+  ]
+ },
+ "conditions": [
+  {
+   "scenario": "default",
+   "bench": "Metrica",
+   "anchor": "end",
+   "point": 0.128215,
+   "lo": 0.105214,
+   "hi": 0.152144,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "default",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.129898,
+   "lo": 0.107634,
+   "hi": 0.151941,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "default",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.14386,
+   "lo": 0.120302,
+   "hi": 0.16938,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0",
+   "bench": "Metrica",
+   "anchor": "end",
+   "point": 0.11616,
+   "lo": 0.090362,
+   "hi": 0.146162,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.118112,
+   "lo": 0.09071,
+   "hi": 0.146169,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.091358,
+   "lo": 0.068349,
+   "hi": 0.116384,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0.2",
+   "bench": "Metrica",
+   "anchor": "end",
+   "point": 0.116149,
+   "lo": 0.091526,
+   "hi": 0.14409,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0.2",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.118212,
+   "lo": 0.092434,
+   "hi": 0.144482,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0.2",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.115066,
+   "lo": 0.092613,
+   "hi": 0.138847,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "--gap 3",
+   "bench": "Metrica",
+   "anchor": "end",
+   "point": 0.136889,
+   "lo": 0.112886,
+   "hi": 0.162363,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--gap 3",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.139365,
+   "lo": 0.116067,
+   "hi": 0.163344,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--gap 3",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.15898,
+   "lo": 0.137018,
+   "hi": 0.182549,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "--crowd 2",
+   "bench": "Metrica",
+   "anchor": "end",
+   "point": 0.135501,
+   "lo": 0.112013,
+   "hi": 0.160419,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--crowd 2",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.137613,
+   "lo": 0.113951,
+   "hi": 0.16166,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--crowd 2",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.152829,
+   "lo": 0.131398,
+   "hi": 0.17551,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "--dead-missing 0.5",
+   "bench": "Metrica",
+   "anchor": "end",
+   "point": 0.125837,
+   "lo": 0.103893,
+   "hi": 0.149412,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--dead-missing 0.5",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.126474,
+   "lo": 0.104351,
+   "hi": 0.148807,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--dead-missing 0.5",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.128291,
+   "lo": 0.106769,
+   "hi": 0.15213,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0 --dead-missing 0.5",
+   "bench": "Metrica",
+   "anchor": "end",
+   "point": 0.113404,
+   "lo": 0.089225,
+   "hi": 0.143433,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0 --dead-missing 0.5",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.113826,
+   "lo": 0.088933,
+   "hi": 0.140776,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "--missing 0 --dead-missing 0.5",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.078129,
+   "lo": 0.056525,
+   "hi": 0.102611,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "ball of the stops on the pitch",
+   "bench": "Metrica",
+   "anchor": "end",
+   "point": 0.127468,
+   "lo": 0.105256,
+   "hi": 0.152078,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "ball of the stops on the pitch",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.127626,
+   "lo": 0.106497,
+   "hi": 0.152803,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "clean players",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.129898,
+   "lo": 0.107634,
+   "hi": 0.151941,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "clean players",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.14386,
+   "lo": 0.120302,
+   "hi": 0.16938,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "position noise 0.3 m per axis (1 s correlated)",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.135637,
+   "lo": 0.111981,
+   "hi": 0.16148,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "position noise 0.3 m per axis (1 s correlated)",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.1492,
+   "lo": 0.126297,
+   "hi": 0.174709,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "position noise 0.6 m per axis (1 s correlated)",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.150755,
+   "lo": 0.127957,
+   "hi": 0.174776,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "position noise 0.6 m per axis (1 s correlated)",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.160557,
+   "lo": 0.137799,
+   "hi": 0.185064,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "position noise 1.0 m per axis (1 s correlated)",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.162735,
+   "lo": 0.139752,
+   "hi": 0.18671,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "position noise 1.0 m per axis (1 s correlated)",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.165966,
+   "lo": 0.14499,
+   "hi": 0.188658,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "position jitter 0.5 m per axis (each frame)",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.131309,
+   "lo": 0.108578,
+   "hi": 0.155433,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "position jitter 0.5 m per axis (each frame)",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.146419,
+   "lo": 0.125126,
+   "hi": 0.170493,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "10% of slot-frames lost (2 s bursts)",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.129201,
+   "lo": 0.107034,
+   "hi": 0.151722,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "10% of slot-frames lost (2 s bursts)",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.145021,
+   "lo": 0.122947,
+   "hi": 0.169488,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "25% of slot-frames lost (2 s bursts)",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.139486,
+   "lo": 0.115342,
+   "hi": 0.164245,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "25% of slot-frames lost (2 s bursts)",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.153225,
+   "lo": 0.130345,
+   "hi": 0.175197,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "cross-team swaps near the ball, rate for 5% of frames",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.145537,
+   "lo": 0.124111,
+   "hi": 0.166522,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "cross-team swaps near the ball, rate for 5% of frames",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.150786,
+   "lo": 0.126467,
+   "hi": 0.175233,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "cross-team swaps near the ball, rate for 15% of frames",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.163922,
+   "lo": 0.142828,
+   "hi": 0.185568,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "cross-team swaps near the ball, rate for 15% of frames",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.156139,
+   "lo": 0.132993,
+   "hi": 0.182103,
+   "above": "4/4",
+   "holds": true
+  },
+  {
+   "scenario": "noise 0.6 m + 10% lost + swaps 5%",
+   "bench": "Metrica",
+   "anchor": "start",
+   "point": 0.156775,
+   "lo": 0.134176,
+   "hi": 0.181925,
+   "above": "1/1",
+   "holds": true
+  },
+  {
+   "scenario": "noise 0.6 m + 10% lost + swaps 5%",
+   "bench": "IDSSE",
+   "anchor": "status",
+   "point": 0.171011,
+   "lo": 0.151278,
+   "hi": 0.19313,
+   "above": "4/4",
+   "holds": true
+  }
+ ],
+ "exact": {
+  "frames_differ": 0,
+  "where": "Metrica Game 1, first seed, truth from the event start"
+ },
+ "not_deciding": [
+  {
+   "bench": "Metrica",
+   "model": "candidate",
+   "against": "radio",
+   "anchor": "end",
+   "point": 0.128215,
+   "lo": 0.105214,
+   "hi": 0.152144,
+   "above": "1/1"
+  },
+  {
+   "bench": "Metrica",
+   "model": "candidate",
+   "against": "radio",
+   "anchor": "start",
+   "point": 0.129898,
+   "lo": 0.107634,
+   "hi": 0.151941,
+   "above": "1/1"
+  },
+  {
+   "bench": "Metrica",
+   "model": "candidate, true D",
+   "against": "radio, true D",
+   "anchor": "end",
+   "point": 0.140088,
+   "lo": 0.114659,
+   "hi": 0.167041,
+   "above": "1/1"
+  },
+  {
+   "bench": "Metrica",
+   "model": "candidate, true D",
+   "against": "radio, true D",
+   "anchor": "start",
+   "point": 0.141744,
+   "lo": 0.116812,
+   "hi": 0.165748,
+   "above": "1/1"
+  },
+  {
+   "bench": "IDSSE",
+   "model": "candidate",
+   "against": "radio",
+   "anchor": "status",
+   "point": 0.14386,
+   "lo": 0.120302,
+   "hi": 0.16938,
+   "above": "4/4"
+  },
+  {
+   "bench": "IDSSE",
+   "model": "candidate, true D",
+   "against": "radio, true D",
+   "anchor": "status",
+   "point": 0.155449,
+   "lo": 0.131063,
+   "hi": 0.183087,
+   "above": "4/4"
+  }
+ ],
+ "fingerprint": {
+  "features": [
+   "own_nearest",
+   "own_second",
+   "own_n_3m",
+   "own_n_10m",
+   "own_nearest_speed",
+   "own_closing",
+   "own_ev_past_12",
+   "own_ev_past_50",
+   "own_ev_past_125",
+   "own_ev_next_12",
+   "own_ev_next_50",
+   "own_ev_next_125",
+   "own_ev_since",
+   "own_ev_until",
+   "own_tracked",
+   "own_advance",
+   "own_spread_x",
+   "own_spread_y",
+   "own_team_fwd",
+   "own_ball_advance",
+   "own_ball_fwd",
+   "rival_nearest",
+   "rival_second",
+   "rival_n_3m",
+   "rival_n_10m",
+   "rival_nearest_speed",
+   "rival_closing",
+   "rival_ev_past_12",
+   "rival_ev_past_50",
+   "rival_ev_past_125",
+   "rival_ev_next_12",
+   "rival_ev_next_50",
+   "rival_ev_next_125",
+   "rival_ev_since",
+   "rival_ev_until",
+   "rival_tracked",
+   "rival_advance",
+   "rival_spread_x",
+   "rival_spread_y",
+   "rival_team_fwd",
+   "rival_ball_advance",
+   "rival_ball_fwd",
+   "ball_seen",
+   "ball_unseen",
+   "ball_next_seen",
+   "ball_known",
+   "ball_speed",
+   "live_since",
+   "live_until"
+  ],
+  "rows": {
+   "metrica 2": "243343eddf7683ef29a4a55f675cda358e513a855eb780193cec58be3ac3452f",
+   "metrica 3": "be6bc510e3d3375372f211c3308493cd323801e0fc07a98c30bd640f9f32b13b",
+   "idsse 1": "7539c082373365ac4eadf849afda1be31cd84229704934fc377242b1b3ea9dd7",
+   "idsse 2": "bdc28c44c55aec6395516ef9006094b6c94e9816d4dc4136bec0351c3071010f",
+   "idsse 3": "6b31251146140fe62f2bfd405e2440f8fb2370cd454ed14ceee22ce7e03750e4",
+   "idsse 4": "ba0bfe4ea85c4f96375992208aa7b3150fdeabc3a202b5ccf8f3b886f870efc2",
+   "idsse 5": "e76285ec975820caef32553ef87e2f709611eba8389d0c4ddca046f1246388ea",
+   "metrica 1": "c265a16c4d717e32b033cd75927e467fcafcc254d59f9442713f8bd333491617",
+   "idsse 6": "e333f72f4e98ccc7f9d2e71ab3b23bd93f0d7338f38633e266f5ab3f438a1935",
+   "idsse 7": "741b53b635af50759ef8c315e586f69762d4052670c0b50555a31798c8e1aaed"
+  },
+  "order": [
+   "metrica 2",
+   "metrica 3",
+   "idsse 1",
+   "idsse 1",
+   "idsse 2",
+   "idsse 2",
+   "idsse 3",
+   "idsse 3",
+   "idsse 4",
+   "idsse 4",
+   "idsse 5",
+   "idsse 5",
+   "metrica 1",
+   "idsse 6",
+   "idsse 6",
+   "idsse 7",
+   "idsse 7"
+  ],
+  "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+  "versions": {
+   "numpy": "2.5.1",
+   "scikit-learn": "1.9.1"
+  },
+  "selection_model": "559406245e3b203c4006dc7fa7bf159312a1413b86a39647a931440a8b1fdef4"
+ },
+ "code": {
+  "commit": "bef9a9329d0657bd4bf24001492e20020438188c",
+  "modified": []
+ },
+ "final": {
+  "matches": [
+   "metrica 2",
+   "metrica 3",
+   "idsse 1",
+   "idsse 2",
+   "idsse 3",
+   "idsse 4",
+   "idsse 5",
+   "metrica 1",
+   "idsse 6",
+   "idsse 7"
+  ],
+  "sha256": "1f8b706e0c30e5e0d3e97d69285dd3bbc1ea1b270c8efaa64f6ddf8190b763c1",
+  "note": "trained on the selection and the reserve: not an independent evaluation (ADR-011)"
+ }
+}

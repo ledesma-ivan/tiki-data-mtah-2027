@@ -1,0 +1,87 @@
+{
+    "revision":  "67b8fe63b02a105ff2946f28efcb0a9d8c6882b2",
+    "code":  [
+                 {
+                     "file":  "explore/short_weight.py",
+                     "sha256":  "54356498ab56c546ab70f92cd09b5eda0490978f3087e10b8be21c10032f0a17"
+                 },
+                 {
+                     "file":  "calibrate_live.py",
+                     "sha256":  "28cf0e78276080b938886959c53590ae67dbef95e25626fd2a722dc64e089944"
+                 },
+                 {
+                     "file":  "calibrate_edges.py",
+                     "sha256":  "ecfc86ca416848758046b24cf6547709bb0c9b30ab7daadd956d19b19e1c1a49"
+                 },
+                 {
+                     "file":  "bench.py",
+                     "sha256":  "a3e10a2ea789231bf7dd1c258fe1fd6d9292f11a2b117a1ec5d37f5174c32a95"
+                 },
+                 {
+                     "file":  "calibrate_dead.py",
+                     "sha256":  "33652d6d37f1b061807264b669c4fe95b4e1df3f329850dd3e21de5e8140da65"
+                 },
+                 {
+                     "file":  "open_tracking.py",
+                     "sha256":  "8c37bca9befa5c3a63fc77d6c89a79633ddf1aa5940633d5caa1f7f8128aeabe"
+                 },
+                 {
+                     "file":  "idsse_dead_labels.py",
+                     "sha256":  "7be0e4cd03b7ea02d28a48e05e38b17e49044e83d3443dcae0acf7e6e082b521"
+                 },
+                 {
+                     "file":  "explore/idsse_bench.py",
+                     "sha256":  "3c8d2acec04995cd69aabce861cafa44230cfa4a01862457f4e59b1dc0d94253"
+                 },
+                 {
+                     "file":  "explore/player_noise.py",
+                     "sha256":  "1947045baf89fd0959a70ff31cb2bf8682b88ac2dd32ea4a161752dbe68b23e6"
+                 },
+                 {
+                     "file":  "possession.py",
+                     "sha256":  "814a65fa5ef47dd1423d941dc7bd76665b55c98564bdbc9c9b97725d01175147"
+                 },
+                 {
+                     "file":  "live_choice.json",
+                     "sha256":  "e86aabc822bc3fb744dcc070af9c120eb8419d58a3d2317dbf48eb59c63c6dc0"
+                 },
+                 {
+                     "file":  "requirements.txt",
+                     "sha256":  "49b0db0f2c00f92cd44fc1c7b1efa59961ad7540d58eb28d4b4fe503ed301eef"
+                 },
+                 {
+                     "file":  "requirements-train.txt",
+                     "sha256":  "6bceb2d6dc9e7446a37f871ae0b2c3058f6d2fb6b1efbee56858ab0428eb3082"
+                 }
+             ],
+    "driver_sha256":  "8bf4641480461f3cbbb24c1723cc78cd162f1e92f5f365b9b6ae49b81bf48cfe",
+    "default_recipe":  {
+                           "leaves":  63,
+                           "lam":  10,
+                           "short_s":  5,
+                           "short_weight":  3,
+                           "iterations":  300,
+                           "learning_rate":  0.1,
+                           "min_samples_leaf":  200,
+                           "random_state":  0,
+                           "early_stopping":  false
+                       },
+    "process_state":  "short_weight mutates CL.SHORT_WEIGHT only in the calling process; a fresh --final imports the committed default 3",
+    "confirmation":  {
+                         "reference":  "radio",
+                         "seed_start":  50,
+                         "metrica_seeds":  "50-59",
+                         "idsse_seeds":  "50-54",
+                         "direct_recipe_writes":  false,
+                         "direct_model_writes":  false,
+                         "confirmation_file_required_by_final":  false
+                     },
+    "shared_files":  {
+                         "live_choice":  "read only by confirmation and final",
+                         "model":  "written by --final only",
+                         "metrica_cache":  "tracking.npz; signature checked, writes not atomic",
+                         "idsse_cache":  "positions.xml.npz and positions.xml.restarts.json; no raw source checksum validation, writes not atomic",
+                         "historical_cache_warm_state":  "SIN CONFIRMAR",
+                         "concurrency_cause_of_discrepancy":  "NO COMPROBADO"
+                     }
+}

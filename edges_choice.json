@@ -1,0 +1,10 @@
+{
+ "recipe": "model 3 s, 31 leaves, team 4 m",
+ "mode": "model",
+ "window": 75,
+ "leaves": 31,
+ "radius": 400,
+ "metrica": 0.0023,
+ "idsse": 0.0381,
+ "mean": 0.0202
+}

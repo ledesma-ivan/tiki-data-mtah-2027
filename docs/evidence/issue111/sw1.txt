@@ -1,0 +1,14 @@
+  left out ('metrica', 2): done
+  left out ('metrica', 3): done
+  left out ('idsse', 1): done
+  left out ('idsse', 2): done
+  left out ('idsse', 3): done
+  left out ('idsse', 4): done
+  left out ('idsse', 5): done
+
+selection (LOMO, {'leaves': 63, 'lam': 10}): paired spellF1 difference against radio; short = true possession < 5 s
+  weight    Metrica    IDSSE     mean   games better than control
+  1         +0.1224  +0.1646  +0.1435   0/12
+  3         +0.1250  +0.1803  +0.1526   10/12
+  5         +0.0970  +0.1800  +0.1385   9/12
+exit 0

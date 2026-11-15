@@ -1,0 +1,7 @@
+# Match data is not redistributable (terms of use) and this repo is public.
+data/
+BAR-ATH_*
+*.mp4
+output/
+__pycache__/
+sample-data/

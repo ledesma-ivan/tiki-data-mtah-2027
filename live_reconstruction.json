@@ -1,0 +1,1989 @@
+{
+ "protocol": "ADR-020",
+ "mode": "selection_reconstruction_only",
+ "code": {
+  "commit": "5817e5f340c4c86535f4c1c377996ad038ecb7cd",
+  "modified": [
+   "docs/DIAGNOSTICO-POSESION.md",
+   "explore/diagnose_changes.py",
+   "tests/test_diagnose_changes.py"
+  ]
+ },
+ "reference": {
+  "leaves": 63,
+  "lam": 10.0,
+  "short_weight": 1.0,
+  "short_s": 5.0
+ },
+ "candidate": {
+  "leaves": 63,
+  "lam": 10.0,
+  "short_weight": 3.0,
+  "short_s": 5.0
+ },
+ "folds": [
+  {
+   "training": [
+    [
+     "metrica",
+     3
+    ],
+    [
+     "idsse",
+     1
+    ],
+    [
+     "idsse",
+     2
+    ],
+    [
+     "idsse",
+     3
+    ],
+    [
+     "idsse",
+     4
+    ],
+    [
+     "idsse",
+     5
+    ]
+   ],
+   "evaluation": [
+    [
+     "metrica",
+     2
+    ]
+   ],
+   "units": [
+    {
+     "game": 2,
+     "match": [
+      "metrica",
+      2
+     ]
+    }
+   ],
+   "fingerprints": {
+    "reference": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "fe185f32e856163254c0b99282f720f954b568498761b2a1f5205adcf826059a"
+    },
+    "candidate": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "7e606bc4857af1665c08264f3a9cd7e50132bd8b0f3be69fb8d4643f034fe2e2"
+    }
+   }
+  },
+  {
+   "training": [
+    [
+     "metrica",
+     2
+    ],
+    [
+     "idsse",
+     1
+    ],
+    [
+     "idsse",
+     2
+    ],
+    [
+     "idsse",
+     3
+    ],
+    [
+     "idsse",
+     4
+    ],
+    [
+     "idsse",
+     5
+    ]
+   ],
+   "evaluation": [
+    [
+     "metrica",
+     3
+    ]
+   ],
+   "units": [
+    {
+     "game": 3,
+     "match": [
+      "metrica",
+      3
+     ]
+    }
+   ],
+   "fingerprints": {
+    "reference": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "8d470b6aae16b955c17f4dbafdc91eff6a2f5dcb92b111f8eef01facba762b27"
+    },
+    "candidate": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "a2ac42e10f63c473c127e75d74bc77de262cc84c36e4c73f470cda7f93fdf097"
+    }
+   }
+  },
+  {
+   "training": [
+    [
+     "metrica",
+     2
+    ],
+    [
+     "metrica",
+     3
+    ],
+    [
+     "idsse",
+     2
+    ],
+    [
+     "idsse",
+     3
+    ],
+    [
+     "idsse",
+     4
+    ],
+    [
+     "idsse",
+     5
+    ]
+   ],
+   "evaluation": [
+    [
+     "idsse",
+     1
+    ]
+   ],
+   "units": [
+    {
+     "game": 10,
+     "match": [
+      "idsse",
+      1
+     ]
+    },
+    {
+     "game": 11,
+     "match": [
+      "idsse",
+      1
+     ]
+    }
+   ],
+   "fingerprints": {
+    "reference": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "1d740537762656324646897dc5ed8c90f83f9e24b7963aaa313af13952361a08"
+    },
+    "candidate": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "14699fc47de96c206a432142c8f149ba99b659e3ee0cf6210cd7a397f4fac01d"
+    }
+   }
+  },
+  {
+   "training": [
+    [
+     "metrica",
+     2
+    ],
+    [
+     "metrica",
+     3
+    ],
+    [
+     "idsse",
+     1
+    ],
+    [
+     "idsse",
+     3
+    ],
+    [
+     "idsse",
+     4
+    ],
+    [
+     "idsse",
+     5
+    ]
+   ],
+   "evaluation": [
+    [
+     "idsse",
+     2
+    ]
+   ],
+   "units": [
+    {
+     "game": 20,
+     "match": [
+      "idsse",
+      2
+     ]
+    },
+    {
+     "game": 21,
+     "match": [
+      "idsse",
+      2
+     ]
+    }
+   ],
+   "fingerprints": {
+    "reference": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "fa5881b7102ef108a7ebc45991cb7b7ce3564e2c49d458cf1306c2e205ebf765"
+    },
+    "candidate": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "b4177496f04d46ec0def9577827519dc98e758e2235bee988feb26b989cd2190"
+    }
+   }
+  },
+  {
+   "training": [
+    [
+     "metrica",
+     2
+    ],
+    [
+     "metrica",
+     3
+    ],
+    [
+     "idsse",
+     1
+    ],
+    [
+     "idsse",
+     2
+    ],
+    [
+     "idsse",
+     4
+    ],
+    [
+     "idsse",
+     5
+    ]
+   ],
+   "evaluation": [
+    [
+     "idsse",
+     3
+    ]
+   ],
+   "units": [
+    {
+     "game": 30,
+     "match": [
+      "idsse",
+      3
+     ]
+    },
+    {
+     "game": 31,
+     "match": [
+      "idsse",
+      3
+     ]
+    }
+   ],
+   "fingerprints": {
+    "reference": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "85c651021334c7db09de99fee839663667f02f2a8ad7b9cea6e3ca1774eef156"
+    },
+    "candidate": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 4",
+      "idsse 4",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "b8b1d1576acc51806dd7a292b71d136e3c26d3a7ef932519e98c7fc98f75382e"
+    }
+   }
+  },
+  {
+   "training": [
+    [
+     "metrica",
+     2
+    ],
+    [
+     "metrica",
+     3
+    ],
+    [
+     "idsse",
+     1
+    ],
+    [
+     "idsse",
+     2
+    ],
+    [
+     "idsse",
+     3
+    ],
+    [
+     "idsse",
+     5
+    ]
+   ],
+   "evaluation": [
+    [
+     "idsse",
+     4
+    ]
+   ],
+   "units": [
+    {
+     "game": 40,
+     "match": [
+      "idsse",
+      4
+     ]
+    },
+    {
+     "game": 41,
+     "match": [
+      "idsse",
+      4
+     ]
+    }
+   ],
+   "fingerprints": {
+    "reference": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "464108e2fe98f5f15b42bf9f1875a1b778b9b2ac8e904c182afc8614ea70796d"
+    },
+    "candidate": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 5": "1fd7a6d6bf0a0afc5bfe2d9dcb2b7c39a38831a568a06a48a85d11282423ca0a"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 5",
+      "idsse 5"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "cc480ab779f93b21054ce2dbba51e21449dee7265e2ca62be49e77012ed42e86"
+    }
+   }
+  },
+  {
+   "training": [
+    [
+     "metrica",
+     2
+    ],
+    [
+     "metrica",
+     3
+    ],
+    [
+     "idsse",
+     1
+    ],
+    [
+     "idsse",
+     2
+    ],
+    [
+     "idsse",
+     3
+    ],
+    [
+     "idsse",
+     4
+    ]
+   ],
+   "evaluation": [
+    [
+     "idsse",
+     5
+    ]
+   ],
+   "units": [
+    {
+     "game": 50,
+     "match": [
+      "idsse",
+      5
+     ]
+    },
+    {
+     "game": 51,
+     "match": [
+      "idsse",
+      5
+     ]
+    }
+   ],
+   "fingerprints": {
+    "reference": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "fa8367fa68bab5f18c955bc0925fea84972de06c29098daec22cf88294ce3de6"
+    },
+    "candidate": {
+     "features": [
+      "own_nearest",
+      "own_second",
+      "own_n_3m",
+      "own_n_10m",
+      "own_nearest_speed",
+      "own_closing",
+      "own_ev_past_12",
+      "own_ev_past_50",
+      "own_ev_past_125",
+      "own_ev_next_12",
+      "own_ev_next_50",
+      "own_ev_next_125",
+      "own_ev_since",
+      "own_ev_until",
+      "own_tracked",
+      "own_advance",
+      "own_spread_x",
+      "own_spread_y",
+      "own_team_fwd",
+      "own_ball_advance",
+      "own_ball_fwd",
+      "rival_nearest",
+      "rival_second",
+      "rival_n_3m",
+      "rival_n_10m",
+      "rival_nearest_speed",
+      "rival_closing",
+      "rival_ev_past_12",
+      "rival_ev_past_50",
+      "rival_ev_past_125",
+      "rival_ev_next_12",
+      "rival_ev_next_50",
+      "rival_ev_next_125",
+      "rival_ev_since",
+      "rival_ev_until",
+      "rival_tracked",
+      "rival_advance",
+      "rival_spread_x",
+      "rival_spread_y",
+      "rival_team_fwd",
+      "rival_ball_advance",
+      "rival_ball_fwd",
+      "ball_seen",
+      "ball_unseen",
+      "ball_next_seen",
+      "ball_known",
+      "ball_speed",
+      "live_since",
+      "live_until"
+     ],
+     "rows": {
+      "metrica 2": "e9e82f90d55afc963168056b02c73b60ae745b3a0c48f979238670f70198dca7",
+      "metrica 3": "f2f37e5079f83ad5a4be1c3f60d2f4c7f9eed453ef83cbe6e87422353667e465",
+      "idsse 1": "6ded112b49eca661d4d642a772b104f7f4ab7fbc661b595d8e9abe4d21dc755c",
+      "idsse 2": "6479e69b004e402b02133298c4d7d865cbd20d2236312287500f71368918a23f",
+      "idsse 3": "150ef563c2f01b44f3b0f2f4332346e5cbc8df914c5a663c511e78667382cae5",
+      "idsse 4": "e94dcc9e50740b8399e4a0d758fb76f01d65b8832ff5cc5e1283ab17752a4127"
+     },
+     "order": [
+      "metrica 2",
+      "metrica 3",
+      "idsse 1",
+      "idsse 1",
+      "idsse 2",
+      "idsse 2",
+      "idsse 3",
+      "idsse 3",
+      "idsse 4",
+      "idsse 4"
+     ],
+     "scorer": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d",
+     "versions": {
+      "numpy": "2.5.1",
+      "scikit-learn": "1.9.1"
+     },
+     "selection_model": "b2bf4ee3450aae133c84bb2644b3e3d1e533893fa83712540748a7372f1ab4b8"
+    }
+   }
+  }
+ ],
+ "results": [
+  {
+   "bench": "Metrica",
+   "anchor": "end",
+   "difference": {
+    "point": -0.0004479438287350978,
+    "lo": -0.009211742043362824,
+    "hi": 0.00856231686601788
+   },
+   "per_game": {
+    "2": -0.0036924114593701375,
+    "3": 0.002796523801899942
+   },
+   "models": {
+    "reference": {
+     "spellF1": 0.653817050952971,
+     "true_possessions": 736.0,
+     "predicted_possessions": 641.0999999999999,
+     "predicted_true_ratio": 0.8710597826086955,
+     "live_minutes": 125.594,
+     "predicted_per_live_minute": 5.104543210662929,
+     "true_per_live_minute": 5.860152555058363,
+     "recall": [
+      {
+       "seconds": [
+        0,
+        2
+       ],
+       "true": 191.0,
+       "matched": 48.8,
+       "recall": 0.25549738219895285
+      },
+      {
+       "seconds": [
+        2,
+        5
+       ],
+       "true": 173.0,
+       "matched": 91.80000000000001,
+       "recall": 0.530635838150289
+      },
+      {
+       "seconds": [
+        5,
+        15
+       ],
+       "true": 203.0,
+       "matched": 168.89999999999998,
+       "recall": 0.8320197044334974
+      },
+      {
+       "seconds": [
+        15,
+        null
+       ],
+       "true": 169.0,
+       "matched": 152.0,
+       "recall": 0.8994082840236687
+      }
+     ],
+     "missed": 274.5,
+     "errors": {
+      "wrong team": {
+       "count": 121.0,
+       "proportion": 0.4408014571948998
+      },
+      "predicted dead": {
+       "count": 34.1,
+       "proportion": 0.12422586520947178
+      },
+      "split": {
+       "count": 8.5,
+       "proportion": 0.030965391621129327
+      },
+      "merged": {
+       "count": 94.5,
+       "proportion": 0.3442622950819672
+      },
+      "boundaries": {
+       "count": 16.4,
+       "proportion": 0.05974499089253187
+      }
+     }
+    },
+    "candidate": {
+     "spellF1": 0.653369107124236,
+     "true_possessions": 736.0,
+     "predicted_possessions": 710.9,
+     "predicted_true_ratio": 0.9658967391304347,
+     "live_minutes": 125.594,
+     "predicted_per_live_minute": 5.660302243737759,
+     "true_per_live_minute": 5.860152555058363,
+     "recall": [
+      {
+       "seconds": [
+        0,
+        2
+       ],
+       "true": 191.0,
+       "matched": 58.9,
+       "recall": 0.30837696335078535
+      },
+      {
+       "seconds": [
+        2,
+        5
+       ],
+       "true": 173.0,
+       "matched": 99.8,
+       "recall": 0.576878612716763
+      },
+      {
+       "seconds": [
+        5,
+        15
+       ],
+       "true": 203.0,
+       "matched": 171.4,
+       "recall": 0.8443349753694581
+      },
+      {
+       "seconds": [
+        15,
+        null
+       ],
+       "true": 169.0,
+       "matched": 153.5,
+       "recall": 0.908284023668639
+      }
+     ],
+     "missed": 252.4,
+     "errors": {
+      "wrong team": {
+       "count": 102.6,
+       "proportion": 0.40649762282091917
+      },
+      "predicted dead": {
+       "count": 34.1,
+       "proportion": 0.13510301109350237
+      },
+      "split": {
+       "count": 12.8,
+       "proportion": 0.05071315372424723
+      },
+      "merged": {
+       "count": 84.9,
+       "proportion": 0.33637083993660855
+      },
+      "boundaries": {
+       "count": 18.0,
+       "proportion": 0.07131537242472266
+      }
+     }
+    }
+   }
+  },
+  {
+   "bench": "Metrica",
+   "anchor": "start",
+   "difference": {
+    "point": -0.000726770188243242,
+    "lo": -0.009851345456863482,
+    "hi": 0.008575892226282775
+   },
+   "per_game": {
+    "2": -0.004581914311422519,
+    "3": 0.003128373934936035
+   },
+   "models": {
+    "reference": {
+     "spellF1": 0.672798648206427,
+     "true_possessions": 703.0,
+     "predicted_possessions": 641.0999999999999,
+     "predicted_true_ratio": 0.9119487908961592,
+     "live_minutes": 125.594,
+     "predicted_per_live_minute": 5.104543210662929,
+     "true_per_live_minute": 5.597401149736453,
+     "recall": [
+      {
+       "seconds": [
+        0,
+        2
+       ],
+       "true": 163.0,
+       "matched": 51.1,
+       "recall": 0.31349693251533745
+      },
+      {
+       "seconds": [
+        2,
+        5
+       ],
+       "true": 168.0,
+       "matched": 90.9,
+       "recall": 0.5410714285714286
+      },
+      {
+       "seconds": [
+        5,
+        15
+       ],
+       "true": 204.0,
+       "matched": 169.3,
+       "recall": 0.8299019607843138
+      },
+      {
+       "seconds": [
+        15,
+        null
+       ],
+       "true": 168.0,
+       "matched": 152.2,
+       "recall": 0.9059523809523808
+      }
+     ],
+     "missed": 239.5,
+     "errors": {
+      "wrong team": {
+       "count": 100.0,
+       "proportion": 0.4175365344467641
+      },
+      "predicted dead": {
+       "count": 33.1,
+       "proportion": 0.13820459290187892
+      },
+      "split": {
+       "count": 8.4,
+       "proportion": 0.03507306889352819
+      },
+      "merged": {
+       "count": 81.80000000000001,
+       "proportion": 0.3415448851774531
+      },
+      "boundaries": {
+       "count": 16.2,
+       "proportion": 0.06764091858037578
+      }
+     }
+    },
+    "candidate": {
+     "spellF1": 0.6720718780181838,
+     "true_possessions": 703.0,
+     "predicted_possessions": 710.9,
+     "predicted_true_ratio": 1.0112375533428164,
+     "live_minutes": 125.594,
+     "predicted_per_live_minute": 5.660302243737759,
+     "true_per_live_minute": 5.597401149736453,
+     "recall": [
+      {
+       "seconds": [
+        0,
+        2
+       ],
+       "true": 163.0,
+       "matched": 62.3,
+       "recall": 0.3822085889570552
+      },
+      {
+       "seconds": [
+        2,
+        5
+       ],
+       "true": 168.0,
+       "matched": 98.8,
+       "recall": 0.5880952380952381
+      },
+      {
+       "seconds": [
+        5,
+        15
+       ],
+       "true": 204.0,
+       "matched": 172.1,
+       "recall": 0.8436274509803922
+      },
+      {
+       "seconds": [
+        15,
+        null
+       ],
+       "true": 168.0,
+       "matched": 153.7,
+       "recall": 0.9148809523809524
+      }
+     ],
+     "missed": 216.1,
+     "errors": {
+      "wrong team": {
+       "count": 79.0,
+       "proportion": 0.3655714946783896
+      },
+      "predicted dead": {
+       "count": 33.1,
+       "proportion": 0.15316982878297086
+      },
+      "split": {
+       "count": 12.7,
+       "proportion": 0.05876908838500694
+      },
+      "merged": {
+       "count": 73.6,
+       "proportion": 0.3405830633965756
+      },
+      "boundaries": {
+       "count": 17.7,
+       "proportion": 0.08190652475705691
+      }
+     }
+    }
+   }
+  },
+  {
+   "bench": "IDSSE",
+   "anchor": "status",
+   "difference": {
+    "point": 0.01996000210585714,
+    "lo": 0.013508633726608016,
+    "hi": 0.026697754105839768
+   },
+   "per_game": {
+    "10": 0.03251481040403498,
+    "11": 0.01941882817380145,
+    "20": 0.017796271502233084,
+    "21": 0.03435025856626731,
+    "30": 0.017269639775990876,
+    "31": 0.016488963947058833,
+    "40": 0.0440931417321571,
+    "41": 0.0019443098152967186,
+    "50": 0.018162874092849557,
+    "51": -0.0024390769511184905
+   },
+   "models": {
+    "reference": {
+     "spellF1": 0.5625997671605898,
+     "true_possessions": 2290.0,
+     "predicted_possessions": 1680.6,
+     "predicted_true_ratio": 0.733886462882096,
+     "live_minutes": 255.62466666666666,
+     "predicted_per_live_minute": 6.574482900711199,
+     "true_per_live_minute": 8.958446889580296,
+     "recall": [
+      {
+       "seconds": [
+        0,
+        2
+       ],
+       "true": 724.0,
+       "matched": 135.6,
+       "recall": 0.187292817679558
+      },
+      {
+       "seconds": [
+        2,
+        5
+       ],
+       "true": 713.0,
+       "matched": 316.2,
+       "recall": 0.4434782608695652
+      },
+      {
+       "seconds": [
+        5,
+        15
+       ],
+       "true": 599.0,
+       "matched": 460.2,
+       "recall": 0.7682804674457429
+      },
+      {
+       "seconds": [
+        15,
+        null
+       ],
+       "true": 254.0,
+       "matched": 223.0,
+       "recall": 0.8779527559055118
+      }
+     ],
+     "missed": 1155.0,
+     "errors": {
+      "wrong team": {
+       "count": 498.20000000000005,
+       "proportion": 0.43134199134199136
+      },
+      "predicted dead": {
+       "count": 164.79999999999998,
+       "proportion": 0.14268398268398266
+      },
+      "split": {
+       "count": 30.6,
+       "proportion": 0.026493506493506496
+      },
+      "merged": {
+       "count": 406.2,
+       "proportion": 0.35168831168831166
+      },
+      "boundaries": {
+       "count": 55.2,
+       "proportion": 0.047792207792207796
+      }
+     }
+    },
+    "candidate": {
+     "spellF1": 0.5825597692664469,
+     "true_possessions": 2290.0,
+     "predicted_possessions": 1861.4,
+     "predicted_true_ratio": 0.8128384279475983,
+     "live_minutes": 255.62466666666666,
+     "predicted_per_live_minute": 7.2817698865785,
+     "true_per_live_minute": 8.958446889580296,
+     "recall": [
+      {
+       "seconds": [
+        0,
+        2
+       ],
+       "true": 724.0,
+       "matched": 169.20000000000002,
+       "recall": 0.23370165745856356
+      },
+      {
+       "seconds": [
+        2,
+        5
+       ],
+       "true": 713.0,
+       "matched": 357.4,
+       "recall": 0.5012622720897615
+      },
+      {
+       "seconds": [
+        5,
+        15
+       ],
+       "true": 599.0,
+       "matched": 478.79999999999995,
+       "recall": 0.7993322203672787
+      },
+      {
+       "seconds": [
+        15,
+        null
+       ],
+       "true": 254.0,
+       "matched": 223.0,
+       "recall": 0.8779527559055118
+      }
+     ],
+     "missed": 1061.6000000000001,
+     "errors": {
+      "wrong team": {
+       "count": 432.4,
+       "proportion": 0.40730972117558395
+      },
+      "predicted dead": {
+       "count": 164.79999999999998,
+       "proportion": 0.15523737754333078
+      },
+      "split": {
+       "count": 39.8,
+       "proportion": 0.03749058025621702
+      },
+      "merged": {
+       "count": 359.6000000000001,
+       "proportion": 0.33873398643556896
+      },
+      "boundaries": {
+       "count": 65.0,
+       "proportion": 0.06122833458929916
+      }
+     }
+    }
+   }
+  }
+ ],
+ "seeds": {
+  "metrica": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "idsse": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "threads": 4,
+ "seconds": 797.0867502689362,
+ "note": "A only: no B loaded or evaluated; investigation of the historical reconstruction discrepancy",
+ "status": "reconstruction_failed",
+ "problems": [
+  "historical reconstruction differs for ('Metrica', 'start'): got -0.000726770188243242, expected approximately 0.0026; explain before evaluating B"
+ ]
+}

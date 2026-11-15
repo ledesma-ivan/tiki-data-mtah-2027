@@ -1,0 +1,29 @@
+{
+    "source":  "https://github.com/nodalsports/more-than-a-hack-2027/issues/111#issuecomment-6727829010",
+    "created_at":  "2026-11-08T22:10:52Z",
+    "updated_at":  "2026-11-08T22:10:52Z",
+    "extraction":  "UTF-8 fenced blocks from inline comment; not original attachment bytes",
+    "comment_sha256":  "AC024442C2171F9E07C3A5DD1D2C22D11320999B034F6911C6390238AD837622",
+    "logs":  [
+                 {
+                     "file":  "sw1.txt",
+                     "sha256":  "636BA19240592FA29911350B6B8E752321135D569BA28A8A23336759D6B155F2",
+                     "bytes":  553
+                 },
+                 {
+                     "file":  "conf_w1.txt",
+                     "sha256":  "09748CE0479400250B2BF8727003E7ABA517F2AB3A2873A538C82BA224D498DB",
+                     "bytes":  4513
+                 },
+                 {
+                     "file":  "conf_w3.txt",
+                     "sha256":  "1C08743579A722D087687BD4E3EA5AEE0D21DFE3F97DF930305CED480B603EA4",
+                     "bytes":  4513
+                 },
+                 {
+                     "file":  "final3.txt",
+                     "sha256":  "509D146BF2AE072F58430AA42B627D0BF46D761CCC74C80227575845B06C0EA2",
+                     "bytes":  132
+                 }
+             ]
+}

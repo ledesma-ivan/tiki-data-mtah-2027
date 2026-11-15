@@ -1,0 +1,126 @@
+{
+  "command": "audit_77_default_confirmation.py",
+  "revision": "67b8fe6",
+  "recipe": {
+    "leaves": 63,
+    "lam": 10
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "thread_environment": {
+    "OMP_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "source_file": "C:\\Users\\emanu\\prj\\more-than-a-hack-2026\\.audit-85-20261108\\historical\\calibrate_live.py",
+  "script_sha256": "9c80acf0410dd06634d03dd2a01805c4949174aada986204424efdacc830c2b1",
+  "input_manifest_sha256": "36c908a162e4ae74d92aa342b25bc04b482e328ce49497e759e7143b5546b7c7",
+  "revision_manifest_sha256": "06a81cc91258ef0fa203ca6a4f6cddd46150c4dd4f4592d3aaadd4d436524669",
+  "reserve": "External Metrica 1 and IDSSE 6-7; already exposed; fixed forensic replay only",
+  "seeds": {
+    "metrica": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "idsse": [
+      50,
+      51,
+      52,
+      53,
+      54
+    ]
+  },
+  "model_hashes_trained_on_selection": {
+    "1": "e68654bb48e1612d357e21cb5db5fc6b2942eeb7a56079866d6e2a9f7f47921f",
+    "3": "0b5857f0b4b3ffe7558e49529f90c772ab9a8ff0ab907dcfd5e475455ba2cc89"
+  },
+  "results": [
+    {
+      "weight": 1,
+      "bench": "Metrica",
+      "anchor": "end",
+      "point": 0.11292653649635742,
+      "lo": 0.09079668026962684,
+      "hi": 0.13602834629265217,
+      "positive_units": 1,
+      "units": 1
+    },
+    {
+      "weight": 1,
+      "bench": "Metrica",
+      "anchor": "start",
+      "point": 0.11490033144073264,
+      "lo": 0.09127191889031515,
+      "hi": 0.13653519362203,
+      "positive_units": 1,
+      "units": 1
+    },
+    {
+      "weight": 1,
+      "bench": "IDSSE",
+      "anchor": "status",
+      "point": 0.14472293968426023,
+      "lo": 0.1221005962212797,
+      "hi": 0.16671058441742875,
+      "positive_units": 4,
+      "units": 4
+    },
+    {
+      "weight": 3,
+      "bench": "Metrica",
+      "anchor": "end",
+      "point": 0.13449417940148067,
+      "lo": 0.10715355406580171,
+      "hi": 0.16224546104791335,
+      "positive_units": 1,
+      "units": 1
+    },
+    {
+      "weight": 3,
+      "bench": "Metrica",
+      "anchor": "start",
+      "point": 0.13722086966047162,
+      "lo": 0.10960001247102322,
+      "hi": 0.16511266188866455,
+      "positive_units": 1,
+      "units": 1
+    },
+    {
+      "weight": 3,
+      "bench": "IDSSE",
+      "anchor": "status",
+      "point": 0.1510784458955826,
+      "lo": 0.1262653776028164,
+      "hi": 0.17526064646591125,
+      "positive_units": 4,
+      "units": 4
+    }
+  ],
+  "immutable_files_before": {
+    "calibrate_live.py": "28cf0e78276080b938886959c53590ae67dbef95e25626fd2a722dc64e089944",
+    "live_choice.json": "e86aabc822bc3fb744dcc070af9c120eb8419d58a3d2317dbf48eb59c63c6dc0",
+    "live_model.json": "1e0579ad8232de7579ac3df6a4d49768fa6702e374e20c57ee9cec2bcb2a8ddf"
+  },
+  "immutable_files_after": {
+    "calibrate_live.py": "28cf0e78276080b938886959c53590ae67dbef95e25626fd2a722dc64e089944",
+    "live_choice.json": "e86aabc822bc3fb744dcc070af9c120eb8419d58a3d2317dbf48eb59c63c6dc0",
+    "live_model.json": "1e0579ad8232de7579ac3df6a4d49768fa6702e374e20c57ee9cec2bcb2a8ddf"
+  },
+  "conditions_replayed": 3,
+  "full_43_conditions_replayed": false,
+  "model_exported": false,
+  "B_loaded": false,
+  "seconds": 325.51783776283264
+}

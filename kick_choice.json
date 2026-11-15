@@ -1,0 +1,12 @@
+{
+ "recipe": "rest 1.5 s, -3 s / +8 s",
+ "mode": "kick",
+ "before": 75,
+ "after": 200,
+ "kick_cms": 400,
+ "rest": 37,
+ "rest_cms": 200,
+ "metrica": 0.0088,
+ "idsse": 0.0072,
+ "mean": 0.008
+}

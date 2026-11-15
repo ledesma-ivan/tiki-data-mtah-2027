@@ -1,0 +1,355 @@
+{
+    "date":  "2026-11-08",
+    "scope":  "External Metrica sample-data and IDSSE only; no challenge assets",
+    "historicalRevisions":  "SIN CONFIRMAR",
+    "currentRevisions":  "Local datasets have no Git metadata; content identified by SHA256",
+    "copiedSources":  [
+                          {
+                              "dataset":  "Metrica",
+                              "game":  1,
+                              "file":  "Sample_Game_1_RawEventsData.csv",
+                              "bytes":  141192,
+                              "mtimeUtc":  "2026-10-27T18:54:05.9128088Z",
+                              "sha256":  "803f312a07572912b9ca2dc9482d31a75e573eae825773253b4ca9472e7760c0",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  1,
+                              "file":  "Sample_Game_1_RawTrackingData_Home_Team.csv",
+                              "bytes":  32927970,
+                              "mtimeUtc":  "2026-10-27T18:54:06.1345637Z",
+                              "sha256":  "ed7289a72d41f280b5316647655b1934575d3506c34e181c343294ceafdcb280",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  1,
+                              "file":  "Sample_Game_1_RawTrackingData_Away_Team.csv",
+                              "bytes":  32927082,
+                              "mtimeUtc":  "2026-10-27T18:54:06.0221540Z",
+                              "sha256":  "380e1b23affe778a7e1e8480983291798f118f71b1dbcf8f9729c06977669101",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  2,
+                              "file":  "Sample_Game_2_RawEventsData.csv",
+                              "bytes":  155833,
+                              "mtimeUtc":  "2026-10-27T18:54:06.1365724Z",
+                              "sha256":  "c2296e8e0caf6f5bb832d5ecf9ebb52c13b18815b1fdbbf79a886238a01d6472",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  2,
+                              "file":  "Sample_Game_2_RawTrackingData_Home_Team.csv",
+                              "bytes":  32031497,
+                              "mtimeUtc":  "2026-10-27T18:54:06.3460209Z",
+                              "sha256":  "92cc3ae1b5ac74530e21a899ab71cf12ee3a58c16592e87add6197f88a042b31",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  2,
+                              "file":  "Sample_Game_2_RawTrackingData_Away_Team.csv",
+                              "bytes":  29768870,
+                              "mtimeUtc":  "2026-10-27T18:54:06.2388772Z",
+                              "sha256":  "f887c6c9227e56c01d1bf62d8d5bc66cdbc1da0c3e9b397c0e9499a0bc6dcb20",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  2,
+                              "file":  "Sample_Game_2_tracking.npz",
+                              "bytes":  48888090,
+                              "mtimeUtc":  "2026-10-31T22:05:50.0213394Z",
+                              "sha256":  "801d55d7b0c9510f35378f39edf4df3a97967a3c06c296b380fe97f13f127620",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  3,
+                              "file":  "Sample_Game_3_events.json",
+                              "bytes":  1826852,
+                              "mtimeUtc":  "2026-10-27T18:54:06.3535800Z",
+                              "sha256":  "ce12d8bf2b8242825e343fe12a06a0731f2d35e0ffb130603ef746f79fbf0b09",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  3,
+                              "file":  "Sample_Game_3_metadata.xml",
+                              "bytes":  83828,
+                              "mtimeUtc":  "2026-10-27T18:54:06.3545813Z",
+                              "sha256":  "0011881426043ff4d404b3445381eafb69086a02d95ac3bcf213a062fae74502",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  3,
+                              "file":  "Sample_Game_3_tracking.txt",
+                              "bytes":  53586876,
+                              "mtimeUtc":  "2026-10-27T18:54:06.5419440Z",
+                              "sha256":  "bd33b0a6f89d5617275eac373b3fd043247c581759484e8f566f7701d09975c9",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "Metrica",
+                              "game":  3,
+                              "file":  "Sample_Game_3_tracking.npz",
+                              "bytes":  48565739,
+                              "mtimeUtc":  "2026-10-31T22:02:58.7139975Z",
+                              "sha256":  "304fd05e867482d0dc1b610b2251d73ecb938f22ddeb8ef09726567eb3ac7841",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+                              "bytes":  11930,
+                              "mtimeUtc":  "2026-11-02T18:30:30.7927728Z",
+                              "sha256":  "a884728647a564cf8b20e5223a1d04a5da6f6725e1e506c8651505327c197ba9",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_02_01_matchinformation_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+                              "bytes":  11722,
+                              "mtimeUtc":  "2026-11-02T18:30:30.6962173Z",
+                              "sha256":  "5490286436c86e6f80a538d2b1b379d0efd016e0defcaf594bc59d9ef5079f4c",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+                              "bytes":  11745,
+                              "mtimeUtc":  "2026-11-02T18:30:31.0577772Z",
+                              "sha256":  "f23b3ee13b988b1ff9a0bce438c416dac47e71355bbc7ee1dab21aaf3e33c18c",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+                              "bytes":  11952,
+                              "mtimeUtc":  "2026-11-02T18:30:31.1688353Z",
+                              "sha256":  "4c497fac683eee8292901c18ca02c0be1d9609d0b9d4bd8aa092c61f9e0b19e9",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+                              "bytes":  11922,
+                              "mtimeUtc":  "2026-11-02T18:30:31.4157405Z",
+                              "sha256":  "566dd5e4c86e124ab90fcdba51100881f0436e22afa71832945a451a2d95a420",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+                              "bytes":  11932,
+                              "mtimeUtc":  "2026-11-02T18:30:31.5419422Z",
+                              "sha256":  "e976aa0c5dba862cfa898ea57ec226efce9d1bc04b23b8d775908db86aa6fa41",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_02_01_matchinformation_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+                              "bytes":  11823,
+                              "mtimeUtc":  "2026-11-02T18:30:31.7734655Z",
+                              "sha256":  "429b584e89df3e3e8b81f4bd0d004b38bd0b4298bb390b8fb43efccb60963e01",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_03_02_events_raw_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+                              "bytes":  776578,
+                              "mtimeUtc":  "2026-11-02T18:30:31.9443596Z",
+                              "sha256":  "6f9741ea62e9dee35b604942e1dad2ac0a4dc3fce14ef2f3858aa12b74dafe00",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_03_02_events_raw_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+                              "bytes":  612114,
+                              "mtimeUtc":  "2026-11-02T18:30:32.2912571Z",
+                              "sha256":  "d7fa1d4445e3215eb79ec62fabefa4779b4974e496195c2fdc25624c375a9b9b",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+                              "bytes":  635747,
+                              "mtimeUtc":  "2026-11-02T18:30:32.4005426Z",
+                              "sha256":  "abc27e3268e6126fb3e6e90bff5cca8d4586a5e0cefe9bd59bf32871e89d8544",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+                              "bytes":  683018,
+                              "mtimeUtc":  "2026-11-02T18:30:32.8091405Z",
+                              "sha256":  "dbb014df1b80d5c99b7fb806a278432c445a5fdd99f59d379d601f20eaf7e142",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+                              "bytes":  698898,
+                              "mtimeUtc":  "2026-11-02T18:30:32.8387231Z",
+                              "sha256":  "e440a3adf9a38d3e4ce4289343a59a3b5f76018a78e97c765114f7817591fb3c",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+                              "bytes":  732186,
+                              "mtimeUtc":  "2026-11-02T18:30:33.1898451Z",
+                              "sha256":  "b79ccc1ee3de5ba662546a9a21304784642d00a791ccc1175550eaa463ea0074",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_03_02_events_raw_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+                              "bytes":  681050,
+                              "mtimeUtc":  "2026-11-02T18:30:33.2258239Z",
+                              "sha256":  "31735a2d7b9008c44cae9b6ac43ab38ddeaa435d0416265ec0ebfebf53b3c982",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml",
+                              "bytes":  418524833,
+                              "mtimeUtc":  "2026-11-02T18:30:41.1247091Z",
+                              "sha256":  "d3dd92e509421a6466acb0a083c009035f1751bc5fd9ef42ffa8f20d01cf7d49",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml.npz",
+                              "bytes":  24598000,
+                              "mtimeUtc":  "2026-11-02T18:33:27.7329405Z",
+                              "sha256":  "be1a90fa1d5738b62ca0e2e488b5a9807f8c491f6e7f7a705f95ccb9a85b6069",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WMX.xml.restarts.json",
+                              "bytes":  1248,
+                              "mtimeUtc":  "2026-11-02T18:33:17.5846205Z",
+                              "sha256":  "b41b145a0fb85f9d3751af597f98a3c84afece6ed9c49533199e24a2559a8af3",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml",
+                              "bytes":  391722803,
+                              "mtimeUtc":  "2026-11-02T18:30:38.7898162Z",
+                              "sha256":  "56ef948961a18e150dba0b7b16869d0008ff66f3050a0c355d31fa5b8ec2fcec",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml.npz",
+                              "bytes":  22056395,
+                              "mtimeUtc":  "2026-11-02T18:33:44.9343865Z",
+                              "sha256":  "992496e4b274460491dc36a6778fe848d71b2103620ebb61115d053cc3be0dce",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000001_DFL-MAT-J03WN1.xml.restarts.json",
+                              "bytes":  1255,
+                              "mtimeUtc":  "2026-11-02T18:33:35.7063917Z",
+                              "sha256":  "a1e95ea165dd9ffcba82ef2bd600df98d1732f00f510ea963aaa12f1badc3f02",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml",
+                              "bytes":  348945715,
+                              "mtimeUtc":  "2026-11-02T18:30:43.8822253Z",
+                              "sha256":  "ec4dcf30200aad694dea263d5289485fcd0ca42badddaeb7c81f5cd5a4229d4f",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml.npz",
+                              "bytes":  22984243,
+                              "mtimeUtc":  "2026-11-02T18:34:01.5129806Z",
+                              "sha256":  "7b6959a5050970e767b4aa05d1f0f78fb09998d520516bd5b0039e451ac04b1e",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOH.xml.restarts.json",
+                              "bytes":  1198,
+                              "mtimeUtc":  "2026-11-02T18:33:52.2051215Z",
+                              "sha256":  "4ecf6ae5e44b0fb3e8434bfc586d492d4d598b44755830c9de837f9400c5a939",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml",
+                              "bytes":  362567859,
+                              "mtimeUtc":  "2026-11-02T18:30:46.3982650Z",
+                              "sha256":  "a228ef0e676d009cefff1580fcb721b53f598454eb120ec347e0a628a3a4646b",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml.npz",
+                              "bytes":  24052394,
+                              "mtimeUtc":  "2026-11-02T18:34:18.5327059Z",
+                              "sha256":  "84dbd8bd0719f7ccc8601d4e956673b59778bd25c221c2e21bd7400fa1ffee87",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WOY.xml.restarts.json",
+                              "bytes":  1309,
+                              "mtimeUtc":  "2026-11-02T18:34:09.0612866Z",
+                              "sha256":  "b00a07842c852f6a1447c57410b59ef20c7d6ecaa361b6b66d458805e776b518",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml",
+                              "bytes":  371688499,
+                              "mtimeUtc":  "2026-11-02T18:30:49.1297756Z",
+                              "sha256":  "845202c29ad93d696653436da426a7cdaefb848298e07b7343de6529581671e1",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml.npz",
+                              "bytes":  24272734,
+                              "mtimeUtc":  "2026-11-02T18:34:36.3548450Z",
+                              "sha256":  "37fdee3f8e6be3228744874a5bc12aa6e4abc4e4950796bec3a9b8abbc9da176",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WPY.xml.restarts.json",
+                              "bytes":  1157,
+                              "mtimeUtc":  "2026-11-02T18:34:26.6266840Z",
+                              "sha256":  "46e432d4f912c451172d51b03df9a07587fdd03dd0c2d60f6f8eb07e42d66825",
+                              "raw":  false
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WQQ.xml",
+                              "bytes":  356219423,
+                              "mtimeUtc":  "2026-11-02T18:30:51.3977420Z",
+                              "sha256":  "cbefcb0bd7f39f3b94ee69a7bc97aac0f936425062c1cc1b144733df36804d6f",
+                              "raw":  true
+                          },
+                          {
+                              "dataset":  "IDSSE",
+                              "file":  "DFL_04_03_positions_raw_observed_DFL-COM-000002_DFL-MAT-J03WR9.xml",
+                              "bytes":  372934140,
+                              "mtimeUtc":  "2026-11-02T18:30:54.1288460Z",
+                              "sha256":  "70b63069189019066fb7e3d9db891122edfe787f3a43ba522ebe45ed89ea0269",
+                              "raw":  true
+                          }
+                      ]
+}

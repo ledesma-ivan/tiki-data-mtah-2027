@@ -1,0 +1,45 @@
+{
+  "command": [
+    "C:\\Users\\emanu\\prj\\more-than-a-hack-2026\\.venv\\Scripts\\python.exe",
+    "calibrate_live.py",
+    "--final"
+  ],
+  "cwd": "C:\\Users\\emanu\\prj\\more-than-a-hack-2026\\.audit-85-20261108\\historical",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\emanu\\prj\\more-than-a-hack-2026\\.venv\\Scripts\\python.exe",
+    "platform": "win32",
+    "packages": {
+      "numpy": "2.5.1",
+      "pandas": "3.0.5",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "threadpoolctl": "3.7.0"
+    },
+    "thread_environment": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "official_code": "C:\\Users\\emanu\\prj\\mtah2027",
+    "historical_environment": "SIN CONFIRMAR",
+    "historical_data_revision": "SIN CONFIRMAR"
+  },
+  "revision": "67b8fe63b02a105ff2946f28efcb0a9d8c6882b2",
+  "before": {
+    "model": "b383df17de7032fabd49fbd56056afab1a23c9ff6bcb509035a14bf9eee52153",
+    "choice": "e86aabc822bc3fb744dcc070af9c120eb8419d58a3d2317dbf48eb59c63c6dc0"
+  },
+  "inputs_manifest_sha256": "36c908a162e4ae74d92aa342b25bc04b482e328ce49497e759e7143b5546b7c7",
+  "expected_historical_model_sha256": "1e0579ad8232de7579ac3df6a4d49768fa6702e374e20c57ee9cec2bcb2a8ddf",
+  "exit_code": 0,
+  "seconds": 141.88769555091858,
+  "after": {
+    "model": "1e0579ad8232de7579ac3df6a4d49768fa6702e374e20c57ee9cec2bcb2a8ddf",
+    "choice": "e86aabc822bc3fb744dcc070af9c120eb8419d58a3d2317dbf48eb59c63c6dc0"
+  },
+  "log_sha256": "509d146bf2ae072f58430aa42b627d0bf46d761ccc74c80227575845b06c0ea2",
+  "log_file": "final-current.txt",
+  "model_exported": true,
+  "matches_historical_model": true
+}

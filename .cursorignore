@@ -1,0 +1,6 @@
+# Match data and derived outputs: never indexed or read by the assistant (AGENTS.md).
+data/
+output/
+BAR-ATH_*
+*.npz
+*.mp4

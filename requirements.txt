@@ -1,0 +1,5 @@
+# Pinned so possession.py writes the same file byte for byte (SUBMISSION.md, #6).
+# Python 3.12 or 3.13: numpy 2.5.1 needs >= 3.12.
+numpy==2.5.1
+# Not used by possession.py: explore/ and the official validator and scorer (../mtah2027).
+pandas==3.0.5
